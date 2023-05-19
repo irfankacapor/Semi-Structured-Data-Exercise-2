@@ -66,46 +66,42 @@ public class SSD {
      */
     private static void transform(String inputPath, String freightPath, String outputPath) throws Exception {
         // Read in the data from the shipment xml document, created in exercise 1
-    	
-    	
-        
-        
+        Document document = documentBuilder.parse(new File(inputPath));
+
         // Create an input source for the freight document
+        InputSource inputSource = new InputSource(new FileInputStream(freightPath));
 
-
-		
+        // Create a ShipmentHandler and an XMLReader (SAX parser)
+        ShipmentHandler shipmentHandler = new ShipmentHandler(document);
+        XMLReader xmlReader = XMLReaderFactory.createXMLReader();
+        xmlReader.setContentHandler(shipmentHandler);
 
         // start the actual parsing
-        
-	   
-        
-       
-        // Validate file before storing        
-			
-		
-		
-		
-        
-        
+        xmlReader.parse(inputSource);
+
+
         // get the document from the ShipmentHandler
-        
-		
-		
-		
-        
-        //validate
-        
-		
-		
-		
-		
-        
-        //store the document
-        
-		
-		
-		
-		
+        Document resultDocument = shipmentHandler.getDocument();
+
+        // Validate file before storing
+       /* SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+        File schemaFile = new File("resources/shipment.xsd");
+        Schema schema = schemaFactory.newSchema(schemaFile);
+        Validator validator = schema.newValidator();
+
+        // Validate
+        try {
+            validator.validate(new DOMSource(resultDocument));
+        } catch (SAXException ex) {
+            exit("Created document not valid!" + '\n' + ex.getMessage());
+        }
+        */
+        // store the document
+        TransformerFactory transformerFactory = TransformerFactory.newInstance();
+        Transformer transformer = transformerFactory.newTransformer();
+        transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+        transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
+        transformer.transform(new DOMSource(resultDocument), new StreamResult(new File(outputPath)));
     }
 
     /**

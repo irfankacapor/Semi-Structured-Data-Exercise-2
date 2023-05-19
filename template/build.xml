@@ -11,8 +11,8 @@
     <property name="output.dir" value="output"/>
 
     <!-- SSD -->
-    <property name="inputpath" value="${resources.dir}/shipment-xsd.xml"/>
-    <property name="outputpath" value="${output.dir}/shipment-xsd-out.xml"/>
+    <property name="inputpath" value="${resources.dir}/shipment-sample-xsd.xml"/>
+    <property name="outputpath" value="${output.dir}/shipment-sample-xsd-out.xml"/>
 	<property name="moddoc" value="${resources.dir}/freight.xml" />
 
 	<!-- XQuery -->
