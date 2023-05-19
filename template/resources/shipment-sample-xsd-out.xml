@@ -1,0 +1,139 @@
+<shipment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="shipment.xsd">
+  <ships>
+    <ship sid="1">
+      <name>Ship 1</name>
+      <info firstTour="1981-10-25" lastTour="1993-04-07" placeOfConstruction="South Africa"/>
+      <tags>
+	<tag>Evelin Smith</tag>
+	<tag>Sebastian Maxwell</tag>
+	<tag>Thomas Blue</tag>
+      </tags>
+    </ship>
+	<ship sid="2">
+      <name>Ship 2</name>
+      <info firstTour="1990-12-20" lastTour="2020-07-10" placeOfConstruction="Portugal"/>
+      <tags>
+	<tag>Evelin Smith</tag>
+	<tag>Samantha Jones</tag>
+      </tags>
+    </ship>
+	<ship sid="3">
+      <name>Ship 3</name>
+      <info firstTour="2000-01-01" lastTour="2023-04-15" placeOfConstruction="Chile"/>
+      <tags>
+	<tag>Robin Smith</tag>
+	<tag>Noah Evans</tag>
+      </tags>
+    </ship>
+	<ship sid="4">
+      <name>Ship 4</name>
+      <info firstTour="2023-03-15" placeOfConstruction="Germany"/>
+      <tags>
+	<tag>Sophie Taylor</tag>
+	<tag>Sebastian Maxwell</tag>
+      </tags>
+    </ship>
+  </ships>
+  
+  <products>
+    <product>
+      <name>Kiwi</name>
+      <type>
+<food foodType="Fruits" storageInfo="paper packaging"/>
+</type>
+      <label>
+		This product was produced by <producer>EML</producer> and will be shipped to the <destination>UK</destination>, <destination>France</destination>, and <destination>Norway</destination>.
+	    Currently <ref sid="1">Ship 1</ref> and <ref sid="2">Ship 2</ref> transport batches of this product.
+      </label>
+      <catalog>P#4525#bge</catalog>
+      <tags>
+	<tag>Eduard Green</tag>
+	<tag>Evelin Smith</tag>
+      </tags>
+    </product>
+
+    <product>
+      <name>Beef</name>
+      <type>
+<food foodType="Meat" storageInfo="paperboard packaging"/>
+</type>
+	  <label>
+		This product is produced by <producer>EML</producer> and will be shipped to the <destination>Germany</destination>.
+      </label>
+      <catalog>P#3525#age</catalog>
+      <tags>
+	<tag>Sebastian Maxwell</tag>
+      </tags>
+    </product>
+	
+	<product>
+      <name>Zweigelt</name>
+      <type>
+<food foodType="Wine" storageInfo="paper packaging"/>
+</type>
+	  <label>
+		This product is produced by <producer>EML</producer>. 
+      </label>
+      <catalog>G#1224#abb</catalog>
+    </product>
+
+    
+  <product>
+<name>Banana</name>
+<type>
+<food foodType="Fruits" storageInfo="paper packaging"/>
+</type>
+<label>This product was produced by <producer>BR</producer> and will be shipped to the <destination>UK</destination>. Currently <ref sid="3">Ship 3</ref> carries a batch of this product. A banana is an elongated, edible fruit - botanically a berry - produced by several kinds of large herbaceous flowering plants in the genus Musa.</label>
+<catalog>E#6781#aaa</catalog>
+<tags/>
+</product>
+<product>
+<name>Chianti</name>
+<type>
+<food foodType="Wine" storageInfo="paper packaging"/>
+</type>
+<label>This product was produced by <producer>Super Tuscans</producer> and will be shipped to the <destination>Japan</destination>. Currently <ref sid="4">Ship 4</ref> carries a batch of this product. A Chianti wine is any wine produced in the Chianti region of central Tuscany. </label>
+<catalog>E#1840#aaa</catalog>
+<tags>
+<tag>Italy</tag>
+</tags>
+</product>
+<product>
+<name>Jeans</name>
+<type>
+<clothing/>
+</type>
+<label>This product was produced by <producer>Levis</producer> and will be shipped to the <destination>France</destination>. Currently <ref sid="2">Ship 2</ref> carries a batch of this product. Often the term "jeans" refers to a particular style of trousers, called "blue jeans", with copper-riveted pockets which were invented by Jacob W. Davis in 1871 and patented by Jacob W. Davis and Levi Strauss on May 20, 1873.  </label>
+<catalog>E#5512#aaa</catalog>
+<tags>
+<tag>Eduard Green</tag>
+</tags>
+</product>
+</products>
+    
+  <tags>
+    <t tagname="Eduard Green">
+      Ship captain.
+    </t>
+    <t tagname="Samantha Jones"/>
+	<t tagname="Sophie Taylor">
+      Ship captain.
+    </t>
+	<t tagname="Robin Smith">
+      Ship captain.
+    </t>
+    <t tagname="Evelin Smith">
+      Ship mate in training - assigned to multiple vessels.
+    </t>
+	<t tagname="Thomas Blue">
+      Ship mate.
+    </t>
+	<t tagname="Noah Evans">
+      Ship mate.
+    </t>
+	<t tagname="Sebastian Maxwell">
+      Ship chef in training - assigned to multiple vessels.
+    </t>
+  <t tagname="Italy"/>
+</tags>
+</shipment>

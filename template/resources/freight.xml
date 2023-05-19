@@ -1,0 +1,35 @@
+<freight>
+    <product>
+        <producer>BR</producer>
+        <name>Banana</name>
+        <type foodType="Fruits" storageInfo="paper packaging">food</type>
+        <destination>UK</destination>
+        <ref sid="3">Ship 3</ref>
+        <label>A banana is an elongated, edible fruit - botanically a berry - produced by several kinds of large herbaceous flowering plants in the genus Musa.</label>
+    </product>
+    
+     <product>
+        <producer>Super Tuscans</producer>
+        <name>Chianti</name>
+        <type foodType="Wine" storageInfo="paper packaging">food</type>
+        <destination>Japan</destination>
+        <ref sid="4">Ship 4</ref>
+        <label>A Chianti wine is any wine produced in the Chianti region of central Tuscany. </label>
+        <tag>Italy</tag>
+    </product>
+    
+    <product>
+        <producer>Levis</producer>
+        <name>Jeans</name>
+        <type>clothing</type>
+        <destination>France</destination>
+        <ref sid="2">Ship 2</ref>
+        <label>Often the term "jeans" refers to a particular style of trousers, called "blue jeans", with copper-riveted pockets which were invented by Jacob W. Davis in 1871 and patented by Jacob W. Davis and Levi Strauss on May 20, 1873.  </label>
+        <tag>Eduard Green</tag>
+    </product>
+
+
+    <shortage>
+        <catalog>X#5555#cca</catalog>
+    </shortage>
+</freight>

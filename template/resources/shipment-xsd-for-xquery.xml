@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shipment>
+  <ships>
+    <ship sid="1">
+      <name>Ship 1</name>
+      <info firstTour="1981-10-25" lastTour="1993-04-07" placeOfConstruction="South Africa"/>
+      <tags>
+	<tag>Eduard Green</tag>
+	<tag>Evelin Smith</tag>
+	<tag>Sebastian Maxwell</tag>
+	<tag>Thomas Blue</tag>
+      </tags>
+    </ship>
+	<ship sid="2">
+      <name>Ship 2</name>
+      <info firstTour="1990-12-20" lastTour="2020-07-10" placeOfConstruction="Portugal"/>
+      <tags>
+	<tag>Evelin Smith</tag>
+	<tag>Samantha Jones</tag>
+      </tags>
+    </ship>
+	<ship sid="3">
+      <name>Ship 3</name>
+      <info firstTour="2000-01-01" lastTour="2023-04-15" placeOfConstruction="Chile"/>
+      <tags>
+	<tag>Robin Smith</tag>
+	<tag>Noah Evans</tag>
+      </tags>
+    </ship>
+	<ship sid="4">
+      <name>Ship 4</name>
+      <info firstTour="2023-03-15" placeOfConstruction="Germany"/>
+      <tags>
+	<tag>Sophie Taylor</tag>
+	<tag>Sebastian Maxwell</tag>
+      </tags>
+    </ship>
+  </ships>
+  
+  <products>
+    <product>
+      <name>Kiwi</name>
+      <type><food foodType="Fruits" storageInfo="paper packaging"/></type>
+      <label>
+		This product was produced by <producer>EML</producer> and will be shipped to the <destination>UK</destination>, <destination>France</destination>, and <destination>Germany</destination>.
+	    Currently <ref sid="1">Ship 1</ref> and <ref sid="2">Ship 2</ref> transport batches of this product.
+      </label>
+      <catalog>P#4525#bge</catalog>
+      <tags>
+	<tag>Eduard Green</tag>
+	<tag>Evelin Smith</tag>
+      </tags>
+    </product>
+
+      <product>
+          <name>Banana</name>
+          <type><food foodType="Fruits" storageInfo="paper packaging"/></type>
+          <label>
+              This product was produced by <producer>EML</producer> and will be shipped to the <destination>UK</destination>, <destination>France</destination>, and <destination>Germany</destination>.
+              Currently <ref sid="1">Ship 1</ref> and <ref sid="2">Ship 2</ref> transport batches of this product.
+          </label>
+          <catalog>P#4525#gbe</catalog>
+          <tags>
+              <tag>Eduard Green</tag>
+              <tag>Evelin Smith</tag>
+          </tags>
+      </product>
+      <product>
+          <name>Ananas</name>
+          <type><food foodType="Fruits" storageInfo="paper packaging"/></type>
+          <label>
+              This product was produced by <producer>EML</producer> and will be shipped to the <destination>UK</destination>, <destination>France</destination>, and <destination>Germany</destination>.
+              Currently <ref sid="1">Ship 1</ref> and <ref sid="2">Ship 2</ref> transport batches of this product.
+          </label>
+          <catalog>P#4525#eab</catalog>
+          <tags>
+              <tag>Eduard Green</tag>
+              <tag>Evelin Smith</tag>
+          </tags>
+      </product>
+
+      <product>
+          <name>Orange</name>
+          <type><food foodType="Fruits" storageInfo="paper packaging"/></type>
+          <label>
+              This product was produced by <producer>EML</producer> and will be shipped to the <destination>UK</destination>, <destination>France</destination>, and <destination>Germany</destination>.
+              Currently <ref sid="1">Ship 1</ref> and <ref sid="2">Ship 2</ref> transport batches of this product.
+          </label>
+          <catalog>P#4525#bae</catalog>
+          <tags>
+              <tag>Eduard Green</tag>
+              <tag>Evelin Smith</tag>
+          </tags>
+      </product>
+
+    <product>
+      <name>Beef</name>
+      <type><food foodType="Meat" storageInfo="paperboard packaging"/></type>
+	  <label>
+		This product is produced by <producer>EML</producer> and will be shipped to the <destination>Germany</destination>. Currently
+          <ref sid="1">Ship 1</ref> transports batches of this product.
+      </label>
+      <catalog>P#3525#age</catalog>
+    </product>
+	
+	<product>
+      <name>Zweigelt</name>
+      <type><food foodType="Wine" storageInfo="paper packaging"/></type>
+	  <label>
+		This product is produced by <producer>EML</producer>. Currently <ref sid="1">Ship 1</ref> transports batches of this product. Destination
+          <destination>Germany</destination>.
+      </label>
+      <catalog>G#1224#abb</catalog>
+    </product>
+
+    <product>
+      <name>Coat</name>
+      <type><clothing material="plastic packaging"/></type>
+	  <label>
+		This product is produced by <producer>Zara</producer> and will be shipped to the <destination>Italy</destination> and <destination>Germany</destination>.
+		<ref sid="3">Ship 3</ref> and <ref sid="1">Ship 1</ref> currently carry a batch of this product.
+      </label>
+      <catalog>X#5555#cca</catalog>
+    </product>
+
+      <product>
+          <name>Product 1</name>
+          <type><food foodType="Fruits" storageInfo="paper packaging"/></type>
+          <label>
+              This product is produced by <producer>EML</producer> and will be shipped to the <destination>UK</destination>.
+              Currently <ref sid="1">Ship 1</ref> transports batches of this product.
+          </label>
+          <catalog>P#4525#bge</catalog>
+      </product>
+      <product>
+          <name>Product 2</name>
+          <type><food foodType="Fruits" storageInfo="paper packaging"/></type>
+          <label>
+              This product is produced by <producer>EML</producer> and will be shipped to the <destination>UK</destination>.
+              Currently <ref sid="1">Ship 1</ref> transports batches of this product.
+          </label>
+          <catalog>P#4526#bge</catalog>
+      </product>
+      <product>
+          <name>Product 3</name>
+          <type><food foodType="Fruits" storageInfo="paper packaging"/></type>
+          <label>
+              This product is produced by <producer>EML</producer> and will be shipped to the <destination>UK</destination>.
+              Currently <ref sid="1">Ship 1</ref> transports batches of this product.
+          </label>
+          <catalog>P#4527#bge</catalog>
+      </product>
+  </products>
+    
+  <tags>
+    <t tagname="Eduard Green">
+      Ship captain.
+    </t>
+    <t tagname="Samantha Jones">
+      Ship captain.
+    </t>
+	<t tagname="Sophie Taylor">
+      Ship captain.
+    </t>
+	<t tagname="Robin Smith">
+      Ship captain.
+    </t>
+    <t tagname="Evelin Smith">
+      Ship mate in training - assigned to multiple vessels.
+    </t>
+	<t tagname="Thomas Blue">
+      Ship mate.
+    </t>
+	<t tagname="Noah Evans">
+      Ship mate.
+    </t>
+	<t tagname="Sebastian Maxwell">
+      Ship chef in training - assigned to multiple vessels.
+    </t>
+  </tags>
+</shipment>
