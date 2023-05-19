@@ -16,7 +16,7 @@
 	<property name="moddoc" value="${resources.dir}/freight.xml" />
 
 	<!-- XQuery -->
-    <property name="xquery.inputpath" value="${resources.dir}/shipment-xsd.xml"/>
+    <property name="xquery.inputpath" value="${resources.dir}/shipment-xsd-for-xquery.xml"/>
     <property name="xquery.querypath" value="${src.dir}/xquery.xq"/>
     <property name="xquery.outputpath" value="${output.dir}/xquery-out.xml"/>
 	

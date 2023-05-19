@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<largeOrdersOnShips>
+   <ship name="Ship 1" destination="UK">
+      <productCount>7</productCount>
+      <product>
+         <name>Kiwi</name>
+      </product>
+      <product>
+         <name>Banana</name>
+      </product>
+      <product>
+         <name>Ananas</name>
+      </product>
+   </ship>
+   <ship name="Ship 1" destination="France">
+      <productCount>4</productCount>
+      <product>
+         <name>Kiwi</name>
+      </product>
+      <product>
+         <name>Banana</name>
+      </product>
+      <product>
+         <name>Ananas</name>
+      </product>
+   </ship>
+   <ship name="Ship 1" destination="Germany">
+      <productCount>7</productCount>
+      <product>
+         <name>Kiwi</name>
+      </product>
+      <product>
+         <name>Banana</name>
+      </product>
+      <product>
+         <name>Ananas</name>
+      </product>
+   </ship>
+   <ship name="Ship 2" destination="UK">
+      <productCount>4</productCount>
+      <product>
+         <name>Kiwi</name>
+      </product>
+      <product>
+         <name>Banana</name>
+      </product>
+      <product>
+         <name>Ananas</name>
+      </product>
+   </ship>
+   <ship name="Ship 2" destination="France">
+      <productCount>4</productCount>
+      <product>
+         <name>Kiwi</name>
+      </product>
+      <product>
+         <name>Banana</name>
+      </product>
+      <product>
+         <name>Ananas</name>
+      </product>
+   </ship>
+   <ship name="Ship 2" destination="Germany">
+      <productCount>4</productCount>
+      <product>
+         <name>Kiwi</name>
+      </product>
+      <product>
+         <name>Banana</name>
+      </product>
+      <product>
+         <name>Ananas</name>
+      </product>
+   </ship>
+</largeOrdersOnShips>
